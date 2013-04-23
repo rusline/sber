@@ -21,6 +21,23 @@ BODY { behavior:url("js/csshover.htc");}
 $(document).ready(function() {	
     //
 		$(".sticker-menu").sticky({ topSpacing:0});
+		
+		//
+		$(".msber-box01-opendrop").click(function(){
+      $(".msber-box01-drop").toggle();
+			return false;	
+    });
+		
+		//
+		$('div.msber-box01-img').eq(0).show();
+		$('a.msber01').each(function(i, item){
+			$(item).bind('click', function(e){
+			 e.preventDefault();
+			 $('div.msber-box01-img').hide();
+			 $('div.msber-box01-img').eq(i).show();
+			})
+		});
+		
 				
 		//
 		$("a.ancLinks").click(function () {
@@ -33,18 +50,8 @@ $(document).ready(function() {
       }
       return false;
     });
-		
-		$("a.ancLinks2").click(function () {
-      elementClick = $(this).attr("href");
-      destination = $(elementClick).offset().top;
-      if($.browser.safari){
-        $('body').animate( { scrollTop: destination }, 1100 );
-      }else{
-        $('html').animate( { scrollTop: destination }, 1100 );
-      }
-      return false;
-    });
-				
+	
+			
 });		
 </script>
 
@@ -74,10 +81,10 @@ $(document).ready(function() {
 	
 	<div class="sticker-menu">
 		<ul>
-			<li class="smenu01"><a href="#goOne" class="ancLinks2">Сбербанк <br />ОнЛ@йн</a></li>
-			<li class="smenu02"><a href="#goTwo" class="ancLinks2">Мобильные <br />приложения</a></li>
-			<li class="smenu03"><a href="#goThree" class="ancLinks2">Мобильный <br />банк</a></li>
-			<li class="smenu04"><a href="#goFour" class="ancLinks2">Банкоматы <br />и терминалы</a></li>
+			<li class="smenu01"><a href="#goOne" class="ancLinks">Сбербанк <br />ОнЛ@йн</a></li>
+			<li class="smenu02"><a href="#goTwo" class="ancLinks">Мобильные <br />приложения</a></li>
+			<li class="smenu03"><a href="#goThree" class="ancLinks">Мобильный <br />банк</a></li>
+			<li class="smenu04"><a href="#goFour" class="ancLinks">Банкоматы <br />и терминалы</a></li>
 		</ul>
 		<div class="clear">&nbsp;</div>
 	</div>
@@ -85,9 +92,9 @@ $(document).ready(function() {
 	
 	<div class="msber-box01" id="goOne">
 		<div class="msber-box01-left">
-			<img class="msber-box01-img01" src="images/sber_img01.jpg" alt="#" />
-			<img class="msber-box01-img02" src="images/sber_img01.jpg" alt="#" />
-			<img class="msber-box01-img03" src="images/sber_img01.jpg" alt="#" />
+			<div class="msber-box01-img"><img src="images/sber_img01.jpg" alt="#" /></div>
+			<div class="msber-box01-img"><img src="images/sber_img02.jpg" alt="#" /></div>
+			<div class="msber-box01-img"><img src="images/sber_img03.jpg" alt="#" /></div>
 		</div>
 		<div class="msber-box01-right">
 			<div class="title">
@@ -96,14 +103,23 @@ $(document).ready(function() {
 			</div>
 			
 			<ul>
-				<li class="first"><span>&nbsp;</span><a href="#">Удобно</a><p>Сбербанк Онлайн всегда с вами. Входите <br />в банк, не заходя в отделение!</p></li>
-				<li class="second"><span>&nbsp;</span><a href="#">Просто</a><p>Находите нужные услуги просто <br />и быстро.</p></li>
-				<li class="third"><span>&nbsp;</span><a href="#">Надежно</a><p>Контролируйте платежи с помощью <br />SMS-уведомлений и подтверждений.</p></li>
+				<li class="first"><span>&nbsp;</span><a class="msber01" href="#">Удобно</a><p>Сбербанк Онлайн всегда с вами. Входите <br />в банк, не заходя в отделение!</p></li>
+				<li class="second"><span>&nbsp;</span><a class="msber01" href="#">Просто</a><p>Находите нужные услуги просто <br />и быстро.</p></li>
+				<li class="third"><span>&nbsp;</span><a class="msber01" href="#">Надежно</a><p>Контролируйте платежи с помощью <br />SMS-уведомлений и подтверждений.</p></li>
 			</ul>
 			
 			<div class="btn-box">
-				<a class="btn-green" href="#">Как подключить</a>
+				<a class="btn-green msber-box01-opendrop" href="#">Как подключить</a>
 				<a class="btn-more" href="#">Узнать больше</a>
+			<div class="clear">&nbsp;</div>	
+			</div>
+			
+			<div class="msber-box01-drop">
+				<ul>
+					 <li class="first"><span>&nbsp;</span><p>Получите международную карту Сбербанка России, если у вас вдруг её нет. Подключите услугу "Мобильный банк"</p></li>
+					 <li class="second"><span>&nbsp;</span><p>Обратитесь в подразделение Сбербанка России, вооружившись паспортом или другим документом, удостоверяющим личность. Заполните заявление на подключение "Сбербанка ОнЛ@йн".</p></li>
+					 <li class="third"><span>&nbsp;</span><p>Получите свой персональный Идентификатор пользователя и пароль в любом банкомате или терминале Сбербанка России (для этого нужна будет ваша пластиковая карта и ПИН-код). </p></li>
+				</ul>
 			</div>
 			
 		</div>
@@ -126,6 +142,7 @@ $(document).ready(function() {
 			<div class="btn-box">
 				<a class="btn-green" href="#">Как установить</a>
 				<a class="btn-more" href="#">Узнать больше</a>
+				<div class="clear">&nbsp;</div>	
 			</div>
 		</div>
 		<div class="msber-box02-right">
@@ -157,6 +174,7 @@ $(document).ready(function() {
 			<div class="btn-box">
 				<a class="btn-green" href="#">Как установить</a>
 				<a class="btn-more" href="#">Узнать больше</a>
+				<div class="clear">&nbsp;</div>	
 			</div>
 			
 		</div>
@@ -179,6 +197,7 @@ $(document).ready(function() {
 			
 			<div class="btn-box">
 				<a class="btn-green" href="#">Узнать больше</a>
+				<div class="clear">&nbsp;</div>	
 			</div>
 		</div>
 		<div class="msber-box04-right">

@@ -27,8 +27,7 @@ html, body, p, h1, h2, h3, a, img, form, table, tr, td {
 .mmbox .mmenu ul li a{font-family: 'Conv_FedraSansPro-MediumLF';font-size:20px;line-height:22px;display:block;padding-bottom:10px}
 .mmbox .mmenu ul li p{color:#464646;font-size:14px;line-height:17px;}
 
-.sticky-wrapper{height:1px !important}
-.sticker-menu{z-index:100;background:url(../images/second_mmenu.png) top repeat-x;height:113px;padding:40px 0 0 10px;display:none;margin-left:-10px}
+.sticker-menu{z-index:100;background:url(../images/second_mmenu.png) top repeat-x;height:0px;padding:0 0 0 10px;display:none;margin-left:-10px}
 .sticker-menu ul{margin:0;padding:0;list-style-type:none}
 .sticker-menu ul li{float:left;width:170px;padding:10px 0 10px 70px}
 .sticker-menu ul li a{font-family: 'Conv_FedraSansPro-MediumLF';font-size:17px;line-height:21px;}
@@ -36,10 +35,9 @@ html, body, p, h1, h2, h3, a, img, form, table, tr, td {
 .sticker-menu ul li.smenu02{background:url(../images/tmenu02_.png) 0 0 no-repeat}
 .sticker-menu ul li.smenu03{background:url(../images/tmenu03_.png) 0 0 no-repeat}
 .sticker-menu ul li.smenu04{background:url(../images/tmenu04_.png) 0 0 no-repeat}
-.is-sticky{height:153px !important}
-.is-sticky .sticker-menu{display:block}
+.is-sticky .sticker-menu{display:block;height:113px;padding-top:40px}
 
-.btn-box{padding:20px 0}
+.btn-box{padding:25px 0 0 0}
 .btn-box a{background:url(../images/sb_btn.png) no-repeat;width:177px;height:34px;line-height:34px;color:#fff;font-size:16px;font-weight:bold;float:left;text-align:center;margin-right:20px}
 .btn-box a:hover{color:#fff}
 .btn-box a.btn-green{background-position:0 -34px}
@@ -48,9 +46,7 @@ html, body, p, h1, h2, h3, a, img, form, table, tr, td {
 
 
 .msber-box01{width:460px;margin:0 auto;padding:0 0 70px 480px;position:relative}
-.msber-box01-img01{display:block}
-.msber-box01-img02{display:none}
-.msber-box01-img03{display:none}
+.msber-box01-img{display:none}
 
 .msber-box01 .msber-box01-left{position:absolute;top:0;left:0}
 .msber-box01 .msber-box01-left img{-moz-box-shadow: 0 0 20px #ccc; -webkit-box-shadow: 0 0 20px #ccc; box-shadow: 0 0 20px #ccc;behavior: url(js/pie.htc)}
@@ -65,7 +61,13 @@ html, body, p, h1, h2, h3, a, img, form, table, tr, td {
 .msber-box01 ul li.first span{background-position: 0 0}
 .msber-box01 ul li.second span{background-position: 0 -23px}
 .msber-box01 ul li.third span{background-position: 0 -46px}
+.msber-box01 .msber-box01-right .msber-box01-drop ul li.first span{background-position: -23px 0}
+.msber-box01 .msber-box01-right .msber-box01-drop ul li.second span{background-position: -23px -23px}
+.msber-box01 .msber-box01-right .msber-box01-drop ul li.third span{background-position: -23px -46px}
 
+.msber-box01-drop{display:none}
+.msber-box01 .msber-box01-drop ul li{position:relative;padding:2px 0 10px 35px}
+.msber-box01 .msber-box01-drop ul li p{padding-top:0}
 
 .msber-box02{width:460px;margin:0 auto;padding:0 480px 70px 0;position:relative;height:480px}
 .msber-box02-img01{display:block}
