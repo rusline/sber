@@ -1,0 +1,199 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Welcome to ...</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="css/styles.css" rel="stylesheet" type="text/css" />
+<link href="css/jquery.formstyler.css" rel="stylesheet" type="text/css" />
+<!--[if IE 6]>
+<script src="js/png.js"></script>
+<script>
+	DD_belatedPNG.fix('div, a, img, *');
+</script>
+<style type="text/css">
+BODY { behavior:url("js/csshover.htc");}
+</style>
+<![endif]-->
+
+<script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
+<script type="text/javascript" src="js/jquery.sticky.js"></script>
+<script>
+$(document).ready(function() {	
+    //
+		$(".sticker-menu").sticky({ topSpacing:0});
+				
+		//
+		$("a.ancLinks").click(function () {
+      elementClick = $(this).attr("href");
+      destination = $(elementClick).offset().top;
+      if($.browser.safari){
+        $('body').animate( { scrollTop: destination }, 1100 );
+      }else{
+        $('html').animate( { scrollTop: destination }, 1100 );
+      }
+      return false;
+    });
+		
+		$("a.ancLinks2").click(function () {
+      elementClick = $(this).attr("href");
+      destination = $(elementClick).offset().top;
+      if($.browser.safari){
+        $('body').animate( { scrollTop: destination }, 1100 );
+      }else{
+        $('html').animate( { scrollTop: destination }, 1100 );
+      }
+      return false;
+    });
+				
+});		
+</script>
+
+
+</head>
+<body style="background:#f9f7f3">
+<center><img src="images/sber_ttop.jpg" width="960" height="234" alt="#" /></center>
+
+<!-- ////////////////////////////////// -->
+
+<div class="mmbox">
+
+	<div class="title">
+		<div>Откройте возможности онлайн-услуг Сбербанка. <br />Это просто, удобно и выгодно!</div>
+		<p>Экономьте свое время: многие банковские операции доступны онлайн.<br />Начните пользоваться прямо сейчас.</p>
+	</div>
+	
+	<div class="mmenu">
+		<ul>
+			<li><a href="#goOne" class="ancLinks"><img src="images/tmenu01.png" alt="#" /></a> <a href="#goOne" class="ancLinks">Сбербанк ОнЛ@йн</a><p>Интернет-обслуживание <br />круглосуточно и без выходных</p></li>
+			<li><a href="#goTwo" class="ancLinks"><img src="images/tmenu02.png" alt="#" /></a> <a href="#goTwo" class="ancLinks">Мобильные <br />приложения</a><p>Сбербанк ОнЛ@йн в вашем <br />смартфоне или планшете</p></li>
+			<li><a href="#goThree" class="ancLinks"><img src="images/tmenu03.png" alt="#" /></a> <a href="#goThree" class="ancLinks">Мобильный банк</a><p>Управление счетами с помощью <br />SMS-сообщений</p></li>
+			<li><a href="#goFour" class="ancLinks"><img src="images/tmenu04.png" alt="#" /></a> <a href="#goFour" class="ancLinks">Банкоматы<br />и терминалы</a><p>Устройства самообслуживания <br />по всему городу</p></li>
+		</ul>
+		<div class="clear">&nbsp;</div>
+	</div>
+	
+	<div class="sticker-menu">
+		<ul>
+			<li class="smenu01"><a href="#goOne" class="ancLinks2">Сбербанк <br />ОнЛ@йн</a></li>
+			<li class="smenu02"><a href="#goTwo" class="ancLinks2">Мобильные <br />приложения</a></li>
+			<li class="smenu03"><a href="#goThree" class="ancLinks2">Мобильный <br />банк</a></li>
+			<li class="smenu04"><a href="#goFour" class="ancLinks2">Банкоматы <br />и терминалы</a></li>
+		</ul>
+		<div class="clear">&nbsp;</div>
+	</div>
+		
+	
+	<div class="msber-box01" id="goOne">
+		<div class="msber-box01-left">
+			<img class="msber-box01-img01" src="images/sber_img01.jpg" alt="#" />
+			<img class="msber-box01-img02" src="images/sber_img01.jpg" alt="#" />
+			<img class="msber-box01-img03" src="images/sber_img01.jpg" alt="#" />
+		</div>
+		<div class="msber-box01-right">
+			<div class="title">
+				<div>Сбербанк ОнЛ@йн</div>
+				<p>Это возможность управлять средствами на ваших <br />счетах и вкладах без обращения в банк</p>
+			</div>
+			
+			<ul>
+				<li class="first"><span>&nbsp;</span><a href="#">Удобно</a><p>Сбербанк Онлайн всегда с вами. Входите <br />в банк, не заходя в отделение!</p></li>
+				<li class="second"><span>&nbsp;</span><a href="#">Просто</a><p>Находите нужные услуги просто <br />и быстро.</p></li>
+				<li class="third"><span>&nbsp;</span><a href="#">Надежно</a><p>Контролируйте платежи с помощью <br />SMS-уведомлений и подтверждений.</p></li>
+			</ul>
+			
+			<div class="btn-box">
+				<a class="btn-green" href="#">Как подключить</a>
+				<a class="btn-more" href="#">Узнать больше</a>
+			</div>
+			
+		</div>
+		<div class="clear">&nbsp;</div>
+	</div>		
+	
+	<div class="msber-box02" id="goTwo">
+		<div class="msber-box02-left">
+			<div class="title">
+				<div>Мобильные приложения</div>
+				<p>Простота и удобство в решении финансовых <br />вопросов</p>
+			</div>
+			
+			<ul>
+				<li class="first"><span>&nbsp;</span><a href="#">Доступно</a><p>Постоянный доступ к Сбербанку со смартфона <br />или планшета.</p></li>
+				<li class="second"><span>&nbsp;</span><a href="#">Быстро</a><p>Переводите деньги или оплачивайте счета <br />всего за несколько касаний.</p></li>
+				<li class="third"><span>&nbsp;</span><a href="#">Полезно</a><p>Находите ближайшие к вам банкоматы, <br />терминалы и банковские отделения.</p></li>
+			</ul>
+			
+			<div class="btn-box">
+				<a class="btn-green" href="#">Как установить</a>
+				<a class="btn-more" href="#">Узнать больше</a>
+			</div>
+		</div>
+		<div class="msber-box02-right">
+			<img class="msber-box02-img01" src="images/sber_img001.jpg" alt="#" />
+			<img class="msber-box02-img02" src="images/sber_img001.jpg" alt="#" />
+			<img class="msber-box02-img03" src="images/sber_img001.jpg" alt="#" />
+		</div>
+		<div class="clear">&nbsp;</div>
+	</div>		
+	
+	<div class="msber-box03" id="goThree">
+		<div class="msber-box03-left">
+			<img class="msber-box03-img01" src="images/sber_img0001.jpg" alt="#" />
+			<img class="msber-box03-img02" src="images/sber_img0001.jpg" alt="#" />
+			<img class="msber-box03-img03" src="images/sber_img0001.jpg" alt="#" />
+		</div>
+		<div class="msber-box03-right">
+			<div class="title">
+				<div>Мобильный банк</div>
+				<p>Управление счетами через мобильный телефон</p>
+			</div>
+			
+			<ul>
+				<li class="first"><span>&nbsp;</span><a href="#">Легко</a><p>Оплачивайте счета или кладите деньги на <br />телефоны друзей одним SMS-сообщением! </p></li>
+				<li class="second"><span>&nbsp;</span><a href="#">Понятно</a><p>Простые и привычные слова вместо сложных <br />и запутанных команд.</p></li>
+				<li class="third"><span>&nbsp;</span><a href="#">Практично</a><p>Контролируйте платежи с помощью <br />SMS-уведомлений и подтверждений.</p></li>
+			</ul>
+			
+			<div class="btn-box">
+				<a class="btn-green" href="#">Как установить</a>
+				<a class="btn-more" href="#">Узнать больше</a>
+			</div>
+			
+		</div>
+		<div class="clear">&nbsp;</div>
+	</div>		
+	
+	
+	<div class="msber-box04" id="goFour">
+		<div class="msber-box04-left">
+			<div class="title">
+				<div>Банкоматы и терминалы</div>
+				<p>Устройства самообслуживания <br />по всему городу</p>
+			</div>
+			
+			<ul>
+				<li class="first"><span>&nbsp;</span><a href="#">Близко</a><p>Выбирайте банкоматы и терминалы, <br />расположенные вблизи от удобных маршрутов.</p></li>
+				<li class="second"><span>&nbsp;</span><a href="#">Очевидно</a><p>Оплачивайте услуги, платите по кредиту или <br />пополняйте баланс быстро и просто.</p></li>
+				<li class="third"><span>&nbsp;</span><a href="#">Надежно</a><p>Контролируйте выполнение всех действий, <br />вводя PIN-код.</p></li>
+			</ul>
+			
+			<div class="btn-box">
+				<a class="btn-green" href="#">Узнать больше</a>
+			</div>
+		</div>
+		<div class="msber-box04-right">
+			<img class="msber-box04-img01" src="images/sber_img00001.jpg" alt="#" />
+			<img class="msber-box04-img02" src="images/sber_img00001.jpg" alt="#" />
+			<img class="msber-box04-img03" src="images/sber_img00001.jpg" alt="#" />
+		</div>
+		<div class="clear">&nbsp;</div>
+	</div>				
+	
+</div>
+
+<!-- ////////////////////////////////// -->
+
+<center><img src="images/sber_bbot.jpg" width="960"  alt="#" /></center>
+
+</body>
+</html>
