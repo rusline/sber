@@ -49,7 +49,7 @@ html, body, p, h1, h2, h3, a, img, form, table, tr, td {
 .msber-box01-img{display:none}
 
 .msber-box01 .msber-box01-left{position:absolute;top:0;left:0}
-.msber-box01 .msber-box01-left img{-moz-box-shadow: 0 0 20px #ccc; -webkit-box-shadow: 0 0 20px #ccc; box-shadow: 0 0 20px #ccc;behavior: url(js/pie.htc)}
+.msber-box01 .msber-box01-left img{-moz-box-shadow: 0 0 20px #ccc; -webkit-box-shadow: 0 0 20px #ccc; box-shadow: 0 0 20px #ccc;behavior: url(js/pie.htc);position:relative}
 .msber-box01 .msber-box01-right .title{text-align:left;padding:0 0 20px 0}
 .msber-box01 .msber-box01-right .title div{font-family: 'Conv_FedraSansPro-MediumLF';color:#000;font-size:29px;padding:0 0 10px 0}
 .msber-box01 .msber-box01-right .title p{color:#464646;font-size:14px;line-height:14px}
@@ -117,7 +117,7 @@ html, body, p, h1, h2, h3, a, img, form, table, tr, td {
 .msber-box04-img03{display:none}
 
 .msber-box04 .msber-box04-right{position:absolute;top:0;right:20px}
-.msber-box03 .msber-box03-right img{-moz-box-shadow: 0 0 20px #ccc; -webkit-box-shadow: 0 0 20px #ccc; box-shadow: 0 0 20px #ccc;behavior: url(js/pie.htc)}
+.msber-box03 .msber-box03-right img{-moz-box-shadow: 0 0 20px #ccc; -webkit-box-shadow: 0 0 20px #ccc; box-shadow: 0 0 20px #ccc;behavior: url(js/pie.htc);position:relative}
 .msber-box04 .msber-box04-left .title{text-align:left;padding:0 0 20px 0}
 .msber-box04 .msber-box04-left .title div{font-family: 'Conv_FedraSansPro-MediumLF';color:#000;font-size:29px;padding:0 0 10px 0}
 .msber-box04 .msber-box04-left .title p{color:#464646;font-size:14px;line-height:14px}
@@ -131,7 +131,7 @@ html, body, p, h1, h2, h3, a, img, form, table, tr, td {
 .msber-box04 ul li.third span{background-position: 0 -46px}
 
 /* Slider */
-div.anythingSlider {width: 446px;height: 415px;margin: 0 auto;}
+div.anythingSlider {width: 446px;height: 415px;margin:0 0 0 auto;}
 div.anythingSlider .anythingWindow {overflow: hidden;	position: relative;	width: 100%;	height: 100%;}
 div.anythingSlider {position: relative;padding:0;}
 ul.anythingBase {background: transparent;	list-style: none;	position: absolute;	top: 0;	left: 0;	margin: 0;	padding: 0;}
@@ -141,6 +141,7 @@ div.anythingSlider .anythingControls {outline: 0;background:url(../images/tabs_b
 	border-radius: 14px;
 	-moz-border-radius:  14px;
 	-webkit-border-radius:  14px;
+	behavior: url(js/pie.htc);position:relative
 }
 div.anythingSlider .anythingControls .start-stop{display:none}
 div.anythingSlider .thumbNav { margin: 0;padding:0}
@@ -149,6 +150,7 @@ div.anythingSlider .thumbNav a {font-size:14px;display: inline-block;text-decora
 	border-radius: 14px;
 	-moz-border-radius:  14px;
 	-webkit-border-radius:  14px;
+	behavior: url(js/pie.htc);position:relative
 }
 div.anythingSlider .thumbNav a.cur{background:url(../images/tabs_act.png) repeat-x;color:#fff}
 div.anythingSlider .thumbNav a.cur{background:url(../images/tabs_act.png) repeat-x;color:#fff}
