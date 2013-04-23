@@ -4,7 +4,6 @@
 <title>Welcome to ...</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <link href="css/styles.css" rel="stylesheet" type="text/css" />
-<link href="css/jquery.formstyler.css" rel="stylesheet" type="text/css" />
 <!--[if IE 6]>
 <script src="js/png.js"></script>
 <script>
@@ -17,6 +16,7 @@ BODY { behavior:url("js/csshover.htc");}
 
 <script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
 <script type="text/javascript" src="js/jquery.sticky.js"></script>
+<script type="text/javascript" src="js/jquery.anythingslider.min.js"></script>
 <script>
 $(document).ready(function() {	
     //
@@ -27,11 +27,12 @@ $(document).ready(function() {
       $(".msber-box01-drop").toggle();
 			return false;	
     });
+
 		
 		//
 		$('div.msber-box01-img').eq(0).show();
 		$('a.msber01').each(function(i, item){
-			$(item).bind('click', function(e){
+			$(item).bind('mouseover', function(e){
 			 e.preventDefault();
 			 $('div.msber-box01-img').hide();
 			 $('div.msber-box01-img').eq(i).show();
@@ -42,15 +43,24 @@ $(document).ready(function() {
 		//
 		$("a.ancLinks").click(function () {
       elementClick = $(this).attr("href");
-      destination = $(elementClick).offset().top;
+      destination = $(elementClick).offset().top - 153;
       if($.browser.safari){
         $('body').animate( { scrollTop: destination }, 1100 );
       }else{
         $('html').animate( { scrollTop: destination }, 1100 );
       }
-      return false;
     });
 	
+		
+		//
+		$('#slider1').anythingSlider({
+				width   : 446, 
+				height  : 416, 
+				hashTags : false,
+				navigationFormatter : function(index, panel){ 
+					return ['Android', 'iPhone', 'iPad', 'Windows Phone'][index - 1];
+				}
+			});
 			
 });		
 </script>
@@ -127,7 +137,7 @@ $(document).ready(function() {
 	</div>		
 	
 	<div class="msber-box02" id="goTwo">
-		<div class="msber-box02-left">
+<div class="msber-box02-left">
 			<div class="title">
 				<div>Мобильные приложения</div>
 				<p>Простота и удобство в решении финансовых <br />вопросов</p>
@@ -144,13 +154,19 @@ $(document).ready(function() {
 				<a class="btn-more" href="#">Узнать больше</a>
 				<div class="clear">&nbsp;</div>	
 			</div>
+		
 		</div>
 		<div class="msber-box02-right">
-			<img class="msber-box02-img01" src="images/sber_img001.jpg" alt="#" />
-			<img class="msber-box02-img02" src="images/sber_img001.jpg" alt="#" />
-			<img class="msber-box02-img03" src="images/sber_img001.jpg" alt="#" />
+			
+			<ul id="slider1">
+				<li class="panel1"><img src="images/sber_img001.jpg" width="446" height="414" alt="#" /></li>
+				<li class="panel2"><img src="images/sber_img002.jpg" width="446" height="414" alt="#" /></li>
+				<li class="panel3"><img src="images/sber_img003.jpg" width="446" height="414" alt="#" /></li>
+				<li class="panel4"><img src="images/sber_img004.jpg" width="446" height="414" alt="#" /></li>
+			</ul>	
+			
 		</div>
-		<div class="clear">&nbsp;</div>
+	<div class="clear">&nbsp;</div>
 	</div>		
 	
 	<div class="msber-box03" id="goThree">
