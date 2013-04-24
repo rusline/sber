@@ -21,7 +21,7 @@ html, body, p, h1, h2, h3, a, img, form, table, tr, td {
 .mmbox .title div{font-family: 'Conv_FedraSansPro-MediumLF';color:#362f2d;font-size:37px;line-height:44px;padding:0 0 10px 0}
 .mmbox .title p{color:#362f2d;font-size:16px;line-height:24px}
 
-.mmbox .mmenu{padding:40px 0}
+.mmbox .mmenu{padding:40px 0;background:url(../images/menu_bot.png) bottom center no-repeat;margin-bottom:50px}
 .mmbox .mmenu ul{margin:0;padding:0;list-style-type:none}
 .mmbox .mmenu ul li{float:left;width:220px;text-align:center;margin:0 10px}
 .mmbox .mmenu ul li a{font-family: 'Conv_FedraSansPro-MediumLF';font-size:20px;line-height:22px;display:block;padding-bottom:10px}
