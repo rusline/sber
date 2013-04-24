@@ -70,6 +70,7 @@ html, body, p, h1, h2, h3, a, img, form, table, tr, td {
 .msber-box01 .msber-box01-drop ul li p{padding-top:0}
 
 .msber-box02{width:460px;margin:0 auto;padding:0 480px 90px 0;position:relative;}
+.msber-box02-img-box{background:url(../images/sber_img001.jpg) no-repeat;width:446px;height:480px}
 .msber-box02-img{display:none}
 
 .msber-box02 .msber-box02-right{position:absolute;top:0;right:20px}
