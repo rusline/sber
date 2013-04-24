@@ -130,33 +130,6 @@ html, body, p, h1, h2, h3, a, img, form, table, tr, td {
 .msber-box04 ul li.second span{background-position: 0 -23px}
 .msber-box04 ul li.third span{background-position: 0 -46px}
 
-/* Slider */
-div.anythingSlider {width: 446px;height: 415px;margin:0 0 0 auto;}
-div.anythingSlider .anythingWindow {overflow: hidden;	position: relative;	width: 100%;	height: 100%;}
-div.anythingSlider {position: relative;padding:0;}
-ul.anythingBase {background: transparent;	list-style: none;	position: absolute;	top: 0;	left: 0;	margin: 0;	padding: 0;}
-ul.anythingBase li.panel {	background: transparent;	display: block;	float: left;	padding: 0;	margin: 0;}
-div.anythingSlider .arrow {top: 50%;position: absolute;display: block;}
-div.anythingSlider .anythingControls {outline: 0;background:url(../images/tabs_bg.png) no-repeat;width:376px;height:30px;margin:20px auto 0 auto;
-	border-radius: 14px;
-	-moz-border-radius:  14px;
-	-webkit-border-radius:  14px;
-	behavior: url(js/pie.htc);position:relative
-}
-div.anythingSlider .anythingControls .start-stop{display:none}
-div.anythingSlider .thumbNav { margin: 0;padding:0}
-div.anythingSlider .thumbNav li { display: inline;padding:0}
-div.anythingSlider .thumbNav a {font-size:14px;display: inline-block;text-decoration: none;height:30px;text-align: center;outline: 0;line-height:30px;padding:0 15px;
-	border-radius: 14px;
-	-moz-border-radius:  14px;
-	-webkit-border-radius:  14px;
-	behavior: url(js/pie.htc);position:relative
-}
-div.anythingSlider .thumbNav a.cur{background:url(../images/tabs_act.png) repeat-x;color:#fff}
-div.anythingSlider .thumbNav a.cur{background:url(../images/tabs_act.png) repeat-x;color:#fff}
-div.anythingSlider .thumbNav .first a{padding:0 19px 0 20px}
-
-
 
 
 .clear{clear:both}

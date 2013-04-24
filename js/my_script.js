@@ -21,6 +21,16 @@
 			})
 		});
 		
+		//
+		$('div.msber-box02-img').eq(0).show();
+		$('a.msber02').each(function(i, item){
+			$(item).bind('mouseover', function(e){
+			 e.preventDefault();
+			 $('div.msber-box02-img').hide();
+			 $('div.msber-box02-img').eq(i).show();
+			})
+		});
+		
 				
 		//
 		$("a.ancLinks").click(function () {
